@@ -287,11 +287,59 @@ a {
     pointer-events: none;
 }
 
+/* Hero with Chat Layout */
+.hero.hero-with-chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--space-3xl) + 60px) var(--container-padding) var(--space-2xl);
+}
+
+.hero.hero-with-chat .hero-content {
+    flex: 1;
+    max-width: 520px;
+    padding-left: 0;
+    padding-right: var(--space-xl);
+}
+
+.hero.hero-with-chat .hero-chat {
+    flex: 1;
+    max-width: 560px;
+}
+
 .hero-content {
     position: relative;
     z-index: var(--z-content);
     max-width: 700px;
     padding-left: var(--container-padding);
+}
+
+/* AI Notice in Hero */
+.hero-ai-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    margin-top: var(--space-lg);
+    background: rgba(201, 162, 39, 0.08);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: 12px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.hero-ai-notice svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--color-gold);
+    margin-top: 2px;
+}
+
+.hero-ai-notice p {
+    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+    line-height: 1.5;
 }
 
 .hero-badge {
@@ -428,79 +476,39 @@ a {
     width: 100%;
 }
 
-/* Hero Visual */
-.hero-visual {
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
-    max-width: 400px;
-    opacity: 0.7;
-    pointer-events: none;
+/* Hero Chat */
+.hero-chat {
+    position: relative;
+    z-index: var(--z-content);
 }
 
-.law-visual {
-    width: 100%;
-    height: auto;
+.hero-chat .chat-container {
+    max-width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
-.gavel-group {
-    animation: gavelFloat 6s ease-in-out infinite;
+.hero-chat .chat-messages {
+    min-height: 320px;
+    max-height: 400px;
 }
 
-@keyframes gavelFloat {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(-2deg); }
+.hero-chat .chat-welcome {
+    padding: var(--space-xl) var(--space-md);
 }
 
-.book {
-    opacity: 0;
-    transform: translateY(20px);
+.hero-chat .welcome-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: var(--space-md);
 }
 
-.paragraph {
-    animation: paragraphFloat 4s ease-in-out infinite;
+.hero-chat .chat-welcome h3 {
+    font-size: 1.125rem;
 }
 
-@keyframes paragraphFloat {
-    0%, 100% { opacity: 0.3; transform: translateY(0); }
-    50% { opacity: 0.5; transform: translateY(-5px); }
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-    position: absolute;
-    bottom: var(--space-xl);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-sm);
-    opacity: 0;
-}
-
-.scroll-line {
-    width: 1px;
-    height: 60px;
-    background: linear-gradient(to bottom, var(--color-gold), transparent);
-    animation: scrollLine 2s infinite;
-}
-
-@keyframes scrollLine {
-    0% { transform: scaleY(0); transform-origin: top; }
-    50% { transform: scaleY(1); transform-origin: top; }
-    50.1% { transform: scaleY(1); transform-origin: bottom; }
-    100% { transform: scaleY(0); transform-origin: bottom; }
-}
-
-.scroll-text {
-    font-family: var(--font-mono);
-    font-size: 0.625rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-text-tertiary);
+.hero-chat .chat-welcome p {
+    font-size: 0.875rem;
+    margin-bottom: var(--space-lg);
 }
 
 /* ===========================
@@ -1232,6 +1240,33 @@ a {
     }
 }
 
+@media (max-width: 1024px) {
+    .hero.hero-with-chat {
+        flex-direction: column;
+        padding-top: calc(var(--space-3xl) + 40px);
+        gap: var(--space-xl);
+    }
+
+    .hero.hero-with-chat .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero.hero-with-chat .hero-chat {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .hero.hero-with-chat .hero-trust {
+        justify-content: center;
+    }
+
+    .hero.hero-with-chat .hero-ai-notice {
+        text-align: left;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --container-padding: 1rem;
@@ -1249,19 +1284,10 @@ a {
         display: flex;
     }
 
-    .hero-visual {
-        display: none;
-    }
-
     .hero-content {
         max-width: 100%;
         text-align: center;
         padding: 0 var(--container-padding);
-    }
-
-    .hero-cta-group {
-        flex-direction: column;
-        align-items: center;
     }
 
     .hero-trust {

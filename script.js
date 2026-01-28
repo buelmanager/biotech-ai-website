@@ -216,15 +216,6 @@ heroTimeline
         '-=0.6'
     )
     .to(
-        '.hero-cta-group',
-        {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-        },
-        '-=0.5'
-    )
-    .to(
         '.hero-trust',
         {
             opacity: 1,
@@ -234,35 +225,26 @@ heroTimeline
         '-=0.5'
     )
     .to(
-        '.scroll-indicator',
+        '.hero-ai-notice',
         {
             opacity: 1,
+            y: 0,
             duration: 0.8,
         },
-        '-=0.3'
+        '-=0.5'
+    )
+    .to(
+        '.hero-chat',
+        {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+        },
+        '-=0.6'
     );
 
-/* ===========================
-   Law Visual Animation
-   =========================== */
-gsap.to('.book', {
-    opacity: 1,
-    y: 0,
-    duration: 0.8,
-    stagger: 0.2,
-    delay: 1,
-});
-
-gsap.to('.law-visual', {
-    scrollTrigger: {
-        trigger: '.hero',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1,
-    },
-    y: 50,
-    opacity: 0.3,
-});
+// Set initial state for hero-chat
+gsap.set('.hero-chat', { opacity: 0, y: 30 });
 
 /* ===========================
    Blur Reveal Animation
@@ -399,16 +381,11 @@ exampleBtns.forEach((btn) => {
             chatInput.value = question;
             chatInput.dispatchEvent(new Event('input'));
 
-            // Scroll to chat section
-            lenis.scrollTo('#chat', {
-                offset: -100,
-                duration: 1.2,
-            });
-
-            // Focus input
+            // Focus input and send
+            chatInput.focus();
             setTimeout(() => {
-                chatInput.focus();
-            }, 500);
+                sendMessage();
+            }, 300);
         }
     });
 });
