@@ -1213,6 +1213,8 @@ html.lenis, html.lenis body {
     justify-content: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-lg);
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .area-badge {

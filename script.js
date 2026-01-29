@@ -220,6 +220,15 @@ heroTimeline
         '-=0.6'
     )
     .to(
+        '.hero-areas',
+        {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+        },
+        '-=0.5'
+    )
+    .to(
         '.hero-values',
         {
             opacity: 1,
@@ -323,11 +332,11 @@ ragArrows.forEach((arrow, index) => {
 });
 
 /* ===========================
-   Consultation Cards Animation
+   Category Area Cards Animation
    =========================== */
-const consultCards = document.querySelectorAll('.consult-card');
+const categoryAreas = document.querySelectorAll('.category-area');
 
-consultCards.forEach((card, index) => {
+categoryAreas.forEach((card, index) => {
     gsap.to(card, {
         scrollTrigger: {
             trigger: card,
@@ -337,7 +346,7 @@ consultCards.forEach((card, index) => {
         opacity: 1,
         y: 0,
         duration: 0.8,
-        delay: index * 0.1,
+        delay: index * 0.15,
         ease: 'power3.out',
     });
 });
