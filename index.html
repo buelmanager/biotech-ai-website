@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
 
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,7 +24,9 @@
     <nav class="nav">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <span class="logo-icon">⚖️</span>
+                <span class="logo-icon">
+                    <i data-lucide="scale" class="icon"></i>
+                </span>
                 <span class="logo-text">법률<span class="logo-highlight">AI</span></span>
             </a>
 
@@ -50,7 +55,9 @@
     <section class="hero hero-with-chat" id="hero">
         <div class="hero-content">
             <div class="hero-badge">
-                <span class="badge-icon">🏛️</span>
+                <span class="badge-icon">
+                    <i data-lucide="landmark" class="icon-sm"></i>
+                </span>
                 <span class="badge-text">법제처 공식 API 연동</span>
             </div>
 
@@ -67,21 +74,27 @@
             <!-- Core Values -->
             <div class="hero-values">
                 <div class="value-item">
-                    <span class="value-icon">✅</span>
+                    <span class="value-icon">
+                        <i data-lucide="badge-check" class="icon-sm"></i>
+                    </span>
                     <div class="value-text">
                         <strong>공식 출처</strong>
                         <span>법제처 API + 대법원 판례</span>
                     </div>
                 </div>
                 <div class="value-item">
-                    <span class="value-icon">📋</span>
+                    <span class="value-icon">
+                        <i data-lucide="file-text" class="icon-sm"></i>
+                    </span>
                     <div class="value-text">
                         <strong>근거 기반</strong>
                         <span>조문·판례 번호 명시</span>
                     </div>
                 </div>
                 <div class="value-item">
-                    <span class="value-icon">🔒</span>
+                    <span class="value-icon">
+                        <i data-lucide="shield-check" class="icon-sm"></i>
+                    </span>
                     <div class="value-text">
                         <strong>프라이버시</strong>
                         <span>개인정보 미수집</span>
@@ -91,7 +104,9 @@
 
             <!-- AI Disclaimer Notice -->
             <div class="hero-ai-notice">
-                <span class="notice-icon">⚠️</span>
+                <span class="notice-icon">
+                    <i data-lucide="alert-triangle" class="icon-sm"></i>
+                </span>
                 <p><strong>법률 정보 안내:</strong> AI가 제공하는 일반적인 법률 정보이며, 정식 법률 자문이 아닙니다. 개별 사안은 변호사와 상담하세요.</p>
             </div>
         </div>
@@ -105,13 +120,16 @@
                         <span>AI 상담 가능</span>
                     </div>
                     <div class="chat-badge">
-                        <span>🏛️ 법제처 데이터 연동</span>
+                        <i data-lucide="landmark" class="icon-xs"></i>
+                        <span>법제처 데이터 연동</span>
                     </div>
                 </div>
 
                 <div class="chat-messages" id="chat-messages">
                     <div class="chat-welcome">
-                        <div class="welcome-emoji">⚖️</div>
+                        <div class="welcome-icon">
+                            <i data-lucide="scale" class="icon-xl"></i>
+                        </div>
                         <h3>노동법 AI 상담</h3>
                         <p>5개 핵심 법령 기반으로 답변드립니다</p>
 
@@ -125,9 +143,18 @@
 
                         <div class="welcome-examples">
                             <span class="example-label">예시 질문:</span>
-                            <button class="example-btn" data-question="퇴직금은 어떻게 계산하나요?">💰 퇴직금 계산</button>
-                            <button class="example-btn" data-question="부당해고를 당했을 때 어떻게 해야 하나요?">🚪 부당해고 대응</button>
-                            <button class="example-btn" data-question="연차휴가는 며칠이 주어지나요?">🏖️ 연차휴가 일수</button>
+                            <button class="example-btn" data-question="퇴직금은 어떻게 계산하나요?">
+                                <i data-lucide="wallet" class="icon-xs"></i>
+                                <span>퇴직금 계산</span>
+                            </button>
+                            <button class="example-btn" data-question="부당해고를 당했을 때 어떻게 해야 하나요?">
+                                <i data-lucide="door-open" class="icon-xs"></i>
+                                <span>부당해고 대응</span>
+                            </button>
+                            <button class="example-btn" data-question="연차휴가는 며칠이 주어지나요?">
+                                <i data-lucide="calendar-days" class="icon-xs"></i>
+                                <span>연차휴가 일수</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +175,8 @@
                         </button>
                     </div>
                     <p class="chat-disclaimer">
-                        ⚠️ AI 답변은 참고용이며 오류가 있을 수 있습니다. 법률 자문이 아닙니다.
+                        <i data-lucide="alert-circle" class="icon-xs"></i>
+                        <span>AI 답변은 참고용이며 오류가 있을 수 있습니다. 법률 자문이 아닙니다.</span>
                     </p>
                 </div>
             </div>
@@ -171,66 +199,95 @@
 
             <div class="trust-grid">
                 <div class="trust-card glass-card">
-                    <div class="trust-icon">📚</div>
+                    <div class="trust-icon">
+                        <i data-lucide="book-open" class="icon-lg"></i>
+                    </div>
                     <div class="trust-stat">5개</div>
                     <h3 class="trust-title">핵심 노동법령</h3>
                     <p class="trust-desc">근로기준법, 최저임금법, 남녀고용평등법, 퇴직급여보장법, 산재보험법</p>
                     <div class="trust-source">
-                        <span class="source-badge">🏛️ 법제처 국가법령정보</span>
+                        <span class="source-badge">
+                            <i data-lucide="landmark" class="icon-xs"></i>
+                            <span>법제처 국가법령정보</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="trust-card glass-card">
-                    <div class="trust-icon">⚖️</div>
+                    <div class="trust-icon">
+                        <i data-lucide="scale" class="icon-lg"></i>
+                    </div>
                     <div class="trust-stat">대법원</div>
                     <h3 class="trust-title">공개 판례 데이터</h3>
                     <p class="trust-desc">대법원 공개 판례를 활용하여 실제 판결 사례 기반 답변 제공</p>
                     <div class="trust-source">
-                        <span class="source-badge">🏛️ 대법원 판례 공공데이터</span>
+                        <span class="source-badge">
+                            <i data-lucide="landmark" class="icon-xs"></i>
+                            <span>대법원 판례 공공데이터</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="trust-card glass-card">
-                    <div class="trust-icon">🔍</div>
+                    <div class="trust-icon">
+                        <i data-lucide="search" class="icon-lg"></i>
+                    </div>
                     <div class="trust-stat">RAG</div>
                     <h3 class="trust-title">근거 기반 답변</h3>
                     <p class="trust-desc">하이브리드 검색(BM25+벡터)으로 관련 법령을 찾아 조문 번호와 함께 답변</p>
                     <div class="trust-source">
-                        <span class="source-badge">🤖 Retrieval-Augmented Generation</span>
+                        <span class="source-badge">
+                            <i data-lucide="cpu" class="icon-xs"></i>
+                            <span>Retrieval-Augmented Generation</span>
+                        </span>
                     </div>
                 </div>
 
                 <div class="trust-card glass-card">
-                    <div class="trust-icon">🔒</div>
+                    <div class="trust-icon">
+                        <i data-lucide="lock" class="icon-lg"></i>
+                    </div>
                     <div class="trust-stat">Zero</div>
                     <h3 class="trust-title">개인정보 수집</h3>
                     <p class="trust-desc">회원가입 없음, 개인정보 미수집, 대화 내용 세션 종료 시 자동 삭제</p>
                     <div class="trust-source">
-                        <span class="source-badge">🛡️ 프라이버시 우선 설계</span>
+                        <span class="source-badge">
+                            <i data-lucide="shield" class="icon-xs"></i>
+                            <span>프라이버시 우선 설계</span>
+                        </span>
                     </div>
                 </div>
             </div>
 
             <!-- Data Sources -->
             <div class="data-sources">
-                <h3 class="sources-title">📁 공식 데이터 출처</h3>
+                <h3 class="sources-title">
+                    <i data-lucide="folder-open" class="icon-sm"></i>
+                    <span>공식 데이터 출처</span>
+                </h3>
                 <div class="sources-grid">
                     <div class="source-item">
-                        <span class="source-icon">🏛️</span>
+                        <span class="source-icon">
+                            <i data-lucide="landmark" class="icon-md"></i>
+                        </span>
                         <div class="source-info">
                             <strong>법제처 국가법령정보센터</strong>
                             <span>Open API 연동 • law.go.kr</span>
                         </div>
                     </div>
                     <div class="source-item">
-                        <span class="source-icon">⚖️</span>
+                        <span class="source-icon">
+                            <i data-lucide="scale" class="icon-md"></i>
+                        </span>
                         <div class="source-info">
                             <strong>대법원 공개 판례</strong>
                             <span>공공저작물 • 판례 검색 API</span>
                         </div>
                     </div>
                     <div class="source-item">
-                        <span class="source-icon">🔄</span>
+                        <span class="source-icon">
+                            <i data-lucide="refresh-cw" class="icon-md"></i>
+                        </span>
                         <div class="source-info">
                             <strong>실시간 업데이트</strong>
                             <span>법령 개정 시 자동 반영</span>
@@ -258,34 +315,48 @@
             <div class="rag-process">
                 <div class="rag-step">
                     <div class="rag-step-number">01</div>
-                    <div class="rag-step-icon">💬</div>
+                    <div class="rag-step-icon">
+                        <i data-lucide="message-circle" class="icon-lg"></i>
+                    </div>
                     <h3 class="rag-step-title">질문 입력</h3>
                     <p class="rag-step-desc">"퇴직금은 어떻게 계산하나요?" 같은 일상 언어로 질문</p>
                 </div>
 
-                <div class="rag-arrow">→</div>
+                <div class="rag-arrow">
+                    <i data-lucide="arrow-right" class="icon-md"></i>
+                </div>
 
                 <div class="rag-step">
                     <div class="rag-step-number">02</div>
-                    <div class="rag-step-icon">🔍</div>
+                    <div class="rag-step-icon">
+                        <i data-lucide="search" class="icon-lg"></i>
+                    </div>
                     <h3 class="rag-step-title">법령·판례 검색</h3>
                     <p class="rag-step-desc">BM25 + 벡터 하이브리드 검색으로 관련 조문 추출</p>
                 </div>
 
-                <div class="rag-arrow">→</div>
+                <div class="rag-arrow">
+                    <i data-lucide="arrow-right" class="icon-md"></i>
+                </div>
 
                 <div class="rag-step">
                     <div class="rag-step-number">03</div>
-                    <div class="rag-step-icon">🤖</div>
+                    <div class="rag-step-icon">
+                        <i data-lucide="cpu" class="icon-lg"></i>
+                    </div>
                     <h3 class="rag-step-title">AI 분석</h3>
                     <p class="rag-step-desc">검색된 법령을 컨텍스트로 LLM이 답변 생성</p>
                 </div>
 
-                <div class="rag-arrow">→</div>
+                <div class="rag-arrow">
+                    <i data-lucide="arrow-right" class="icon-md"></i>
+                </div>
 
                 <div class="rag-step">
                     <div class="rag-step-number">04</div>
-                    <div class="rag-step-icon">📋</div>
+                    <div class="rag-step-icon">
+                        <i data-lucide="file-check" class="icon-lg"></i>
+                    </div>
                     <h3 class="rag-step-title">근거 답변</h3>
                     <p class="rag-step-desc">조문 번호와 판례를 명시한 신뢰할 수 있는 답변</p>
                 </div>
@@ -294,7 +365,10 @@
             <!-- Answer Example -->
             <div class="answer-example glass-card">
                 <div class="example-header">
-                    <span class="example-badge">💡 답변 예시</span>
+                    <span class="example-badge">
+                        <i data-lucide="lightbulb" class="icon-xs"></i>
+                        <span>답변 예시</span>
+                    </span>
                 </div>
                 <div class="example-content">
                     <p class="example-question">Q: 퇴직금은 어떻게 계산하나요?</p>
@@ -305,7 +379,10 @@
                             퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365)
                         </div>
                         <p class="law-reference">
-                            <span class="ref-badge">📖 근거 법령</span>
+                            <span class="ref-badge">
+                                <i data-lucide="book-marked" class="icon-xs"></i>
+                                <span>근거 법령</span>
+                            </span>
                             <strong>근로자퇴직급여 보장법 제8조</strong> (퇴직금제도의 설정)
                         </p>
                     </div>
@@ -330,7 +407,9 @@
 
             <div class="consultation-grid">
                 <div class="consult-card glass-card">
-                    <div class="consult-icon">🚪</div>
+                    <div class="consult-icon">
+                        <i data-lucide="door-open" class="icon-lg"></i>
+                    </div>
                     <h3 class="consult-title">부당해고</h3>
                     <ul class="consult-list">
                         <li>해고 사유 및 절차</li>
@@ -342,7 +421,9 @@
                 </div>
 
                 <div class="consult-card glass-card">
-                    <div class="consult-icon">💰</div>
+                    <div class="consult-icon">
+                        <i data-lucide="wallet" class="icon-lg"></i>
+                    </div>
                     <h3 class="consult-title">임금체불</h3>
                     <ul class="consult-list">
                         <li>미지급 임금 청구</li>
@@ -354,7 +435,9 @@
                 </div>
 
                 <div class="consult-card glass-card">
-                    <div class="consult-icon">📅</div>
+                    <div class="consult-icon">
+                        <i data-lucide="piggy-bank" class="icon-lg"></i>
+                    </div>
                     <h3 class="consult-title">퇴직금</h3>
                     <ul class="consult-list">
                         <li>퇴직금 계산 방법</li>
@@ -366,7 +449,9 @@
                 </div>
 
                 <div class="consult-card glass-card">
-                    <div class="consult-icon">🏖️</div>
+                    <div class="consult-icon">
+                        <i data-lucide="calendar-days" class="icon-lg"></i>
+                    </div>
                     <h3 class="consult-title">연차휴가</h3>
                     <ul class="consult-list">
                         <li>연차 발생 기준</li>
@@ -378,7 +463,9 @@
                 </div>
 
                 <div class="consult-card glass-card">
-                    <div class="consult-icon">😰</div>
+                    <div class="consult-icon">
+                        <i data-lucide="users" class="icon-lg"></i>
+                    </div>
                     <h3 class="consult-title">직장 내 괴롭힘</h3>
                     <ul class="consult-list">
                         <li>괴롭힘 판단 기준</li>
@@ -392,18 +479,21 @@
 
             <!-- Coming Soon -->
             <div class="coming-soon">
-                <h3 class="coming-title">🚀 확장 예정 분야</h3>
+                <h3 class="coming-title">
+                    <i data-lucide="rocket" class="icon-sm"></i>
+                    <span>확장 예정 분야</span>
+                </h3>
                 <div class="coming-grid">
                     <div class="coming-item">
-                        <span class="coming-icon">🏠</span>
+                        <i data-lucide="home" class="icon-md"></i>
                         <span>임대차법</span>
                     </div>
                     <div class="coming-item">
-                        <span class="coming-icon">🛒</span>
+                        <i data-lucide="shopping-cart" class="icon-md"></i>
                         <span>소비자보호법</span>
                     </div>
                     <div class="coming-item">
-                        <span class="coming-icon">🚗</span>
+                        <i data-lucide="car" class="icon-md"></i>
                         <span>교통사고·손해배상</span>
                     </div>
                 </div>
@@ -415,7 +505,9 @@
     <section class="disclaimer-section">
         <div class="container">
             <div class="disclaimer-box glass-card">
-                <div class="disclaimer-icon">⚠️</div>
+                <div class="disclaimer-icon">
+                    <i data-lucide="alert-triangle" class="icon-xl"></i>
+                </div>
                 <div class="disclaimer-content">
                     <h3>법률 정보 서비스 안내</h3>
                     <ul class="disclaimer-list">
@@ -534,7 +626,9 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#" class="nav-logo">
-                        <span class="logo-icon">⚖️</span>
+                        <span class="logo-icon">
+                            <i data-lucide="scale" class="icon"></i>
+                        </span>
                         <span class="logo-text">법률<span class="logo-highlight">AI</span></span>
                     </a>
                     <p class="footer-tagline">
@@ -542,8 +636,14 @@
                         근거 있는 AI 법률 정보 서비스
                     </p>
                     <div class="footer-badges">
-                        <span class="footer-badge">🏛️ 법제처 API</span>
-                        <span class="footer-badge">⚖️ 대법원 판례</span>
+                        <span class="footer-badge">
+                            <i data-lucide="landmark" class="icon-xs"></i>
+                            <span>법제처 API</span>
+                        </span>
+                        <span class="footer-badge">
+                            <i data-lucide="scale" class="icon-xs"></i>
+                            <span>대법원 판례</span>
+                        </span>
                     </div>
                 </div>
 
@@ -573,7 +673,10 @@
             <div class="footer-bottom">
                 <p class="copyright">&copy; 2024 법률AI. 오픈소스 프로젝트.</p>
                 <div class="footer-disclaimer">
-                    <p>⚠️ 본 서비스는 AI가 제공하는 일반적인 법률 정보이며, 법률 자문이 아닙니다. 구체적 사안은 변호사와 상담하세요.</p>
+                    <p>
+                        <i data-lucide="alert-circle" class="icon-xs"></i>
+                        <span>본 서비스는 AI가 제공하는 일반적인 법률 정보이며, 법률 자문이 아닙니다. 구체적 사안은 변호사와 상담하세요.</span>
+                    </p>
                 </div>
             </div>
         </div>

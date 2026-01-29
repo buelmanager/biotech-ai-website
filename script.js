@@ -1,8 +1,11 @@
 /* ===========================
    법률AI - Main Script
    법제처 공식 데이터 기반 AI 법률 정보 서비스
-   GSAP + Lenis + Canvas Particles
+   GSAP + Lenis + Canvas Particles + Lucide Icons
    =========================== */
+
+// Initialize Lucide Icons
+lucide.createIcons();
 
 // Initialize Lenis Smooth Scroll
 const lenis = new Lenis({

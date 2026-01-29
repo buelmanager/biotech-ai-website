@@ -121,6 +121,37 @@ html.lenis, html.lenis body {
     border-radius: 16px;
 }
 
+/* Icon Sizes */
+.icon-xs {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-sm {
+    width: 18px;
+    height: 18px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+}
+
+.icon-md {
+    width: 28px;
+    height: 28px;
+}
+
+.icon-lg {
+    width: 36px;
+    height: 36px;
+}
+
+.icon-xl {
+    width: 48px;
+    height: 48px;
+}
+
 /* ===========================
    Particle Canvas
    =========================== */
@@ -172,7 +203,10 @@ html.lenis, html.lenis body {
 }
 
 .logo-icon {
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
 }
 
 .logo-text {
@@ -306,7 +340,10 @@ html.lenis, html.lenis body {
 }
 
 .badge-icon {
-    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-light);
 }
 
 .badge-text {
@@ -370,7 +407,10 @@ html.lenis, html.lenis body {
 }
 
 .value-icon {
-    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary-light);
 }
 
 .value-text {
@@ -403,8 +443,11 @@ html.lenis, html.lenis body {
 }
 
 .notice-icon {
-    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+    color: var(--color-gold);
 }
 
 .hero-ai-notice p {
@@ -463,6 +506,9 @@ html.lenis, html.lenis body {
 }
 
 .chat-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-size: 0.75rem;
     padding: 0.25rem 0.75rem;
     background: rgba(59, 130, 246, 0.1);
@@ -488,10 +534,12 @@ html.lenis, html.lenis body {
     padding: var(--space-xl) var(--space-md);
 }
 
-.welcome-emoji {
-    font-size: 3rem;
+.welcome-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: var(--space-md);
-    line-height: 1;
+    color: var(--color-primary);
 }
 
 .chat-welcome h3 {
@@ -540,6 +588,9 @@ html.lenis, html.lenis body {
 }
 
 .example-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-family: var(--font-primary);
     font-size: 0.8125rem;
     color: var(--color-text-secondary);
@@ -625,6 +676,10 @@ html.lenis, html.lenis body {
 }
 
 .chat-disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
     font-size: 0.6875rem;
     color: var(--color-text-muted);
     text-align: center;
@@ -757,8 +812,11 @@ html.lenis, html.lenis body {
 }
 
 .trust-icon {
-    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: var(--space-md);
+    color: var(--color-primary);
 }
 
 .trust-stat {
@@ -787,7 +845,9 @@ html.lenis, html.lenis body {
 }
 
 .source-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-size: 0.6875rem;
     padding: 0.25rem 0.5rem;
     background: rgba(59, 130, 246, 0.1);
@@ -804,6 +864,10 @@ html.lenis, html.lenis body {
 }
 
 .sources-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: var(--space-lg);
@@ -827,7 +891,10 @@ html.lenis, html.lenis body {
 }
 
 .source-icon {
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
 }
 
 .source-info {
@@ -882,8 +949,11 @@ html.lenis, html.lenis body {
 }
 
 .rag-step-icon {
-    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: var(--space-md);
+    color: var(--color-primary);
 }
 
 .rag-step-title {
@@ -900,7 +970,9 @@ html.lenis, html.lenis body {
 }
 
 .rag-arrow {
-    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-primary);
     padding-top: var(--space-3xl);
     opacity: 0;
@@ -920,6 +992,9 @@ html.lenis, html.lenis body {
 }
 
 .example-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-primary-light);
@@ -971,6 +1046,9 @@ html.lenis, html.lenis body {
 }
 
 .ref-badge {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-size: 0.75rem;
     color: var(--color-gold);
 }
@@ -1009,8 +1087,11 @@ html.lenis, html.lenis body {
 }
 
 .consult-icon {
-    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: var(--space-md);
+    color: var(--color-primary);
 }
 
 .consult-title {
@@ -1049,6 +1130,10 @@ html.lenis, html.lenis body {
 }
 
 .coming-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: var(--space-lg);
@@ -1069,8 +1154,8 @@ html.lenis, html.lenis body {
     color: var(--color-text-muted);
 }
 
-.coming-icon {
-    font-size: 1.5rem;
+.coming-item i {
+    color: var(--color-text-tertiary);
 }
 
 /* ===========================
@@ -1089,8 +1174,11 @@ html.lenis, html.lenis body {
 }
 
 .disclaimer-icon {
-    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
+    color: var(--color-gold);
 }
 
 .disclaimer-content h3 {
@@ -1228,6 +1316,9 @@ html.lenis, html.lenis body {
 }
 
 .footer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-size: 0.6875rem;
     padding: 0.25rem 0.5rem;
     background: rgba(59, 130, 246, 0.1);
@@ -1280,6 +1371,9 @@ html.lenis, html.lenis body {
 }
 
 .footer-disclaimer p {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
     font-size: 0.75rem;
     color: var(--color-text-muted);
 }
