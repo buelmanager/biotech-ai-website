@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>법률AI | 법제처 공식 데이터 기반 AI 법률 정보 서비스</title>
-    <meta name="description" content="법제처 국가법령정보 API와 대법원 판례를 기반으로 근거 있는 노동법 정보를 제공하는 무료 AI 서비스. 조문 번호와 판례를 명시한 신뢰할 수 있는 답변.">
+    <title>법률AI | 4대 법률 분야 특화 AI 법률 정보 서비스</title>
+    <meta name="description" content="노동법, 임대차법, 소비자보호법, 교통사고 4대 분야에 특화된 AI 법률 정보 서비스. 법제처 API와 대법원 판례 기반 근거 있는 답변.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -33,7 +33,7 @@
             <div class="nav-links">
                 <a href="#trust" class="nav-link">신뢰 지표</a>
                 <a href="#how-it-works" class="nav-link">작동 원리</a>
-                <a href="#categories" class="nav-link">상담 분야</a>
+                <a href="#categories" class="nav-link">4대 특화 분야</a>
                 <a href="#faq" class="nav-link">FAQ</a>
             </div>
 
@@ -62,14 +62,34 @@
             </div>
 
             <h1 class="hero-title">
-                <span class="title-line">5개 핵심 노동법령 기반</span>
+                <span class="title-line">4대 법률 분야 특화</span>
                 <span class="title-line title-highlight">근거 있는 AI 법률 정보</span>
             </h1>
 
             <p class="hero-description">
-                법제처 국가법령정보 API와 대법원 판례를 실시간 검색하여<br>
+                노동법, 임대차법, 소비자보호법, 교통사고 4개 분야에 특화된 AI가<br>
                 <strong>조문 번호와 판례 번호를 명시</strong>한 근거 기반 답변을 제공합니다
             </p>
+
+            <!-- 4 Specialized Areas Badge -->
+            <div class="hero-areas">
+                <div class="area-badge">
+                    <i data-lucide="briefcase" class="icon-sm"></i>
+                    <span>노동법</span>
+                </div>
+                <div class="area-badge">
+                    <i data-lucide="home" class="icon-sm"></i>
+                    <span>임대차법</span>
+                </div>
+                <div class="area-badge">
+                    <i data-lucide="shopping-cart" class="icon-sm"></i>
+                    <span>소비자보호법</span>
+                </div>
+                <div class="area-badge">
+                    <i data-lucide="car" class="icon-sm"></i>
+                    <span>교통사고</span>
+                </div>
+            </div>
 
             <!-- Core Values -->
             <div class="hero-values">
@@ -130,30 +150,29 @@
                         <div class="welcome-icon">
                             <i data-lucide="scale" class="icon-xl"></i>
                         </div>
-                        <h3>노동법 AI 상담</h3>
-                        <p>5개 핵심 법령 기반으로 답변드립니다</p>
+                        <h3>4대 분야 특화 AI 상담</h3>
+                        <p>노동법, 임대차, 소비자, 교통사고 분야 상담</p>
 
                         <div class="welcome-laws">
-                            <span class="law-badge">근로기준법</span>
-                            <span class="law-badge">최저임금법</span>
-                            <span class="law-badge">남녀고용평등법</span>
-                            <span class="law-badge">퇴직급여법</span>
-                            <span class="law-badge">산재보험법</span>
+                            <span class="law-badge area-labor">노동법</span>
+                            <span class="law-badge area-housing">임대차법</span>
+                            <span class="law-badge area-consumer">소비자보호법</span>
+                            <span class="law-badge area-traffic">교통사고</span>
                         </div>
 
                         <div class="welcome-examples">
                             <span class="example-label">예시 질문:</span>
                             <button class="example-btn" data-question="퇴직금은 어떻게 계산하나요?">
-                                <i data-lucide="wallet" class="icon-xs"></i>
+                                <i data-lucide="briefcase" class="icon-xs"></i>
                                 <span>퇴직금 계산</span>
                             </button>
-                            <button class="example-btn" data-question="부당해고를 당했을 때 어떻게 해야 하나요?">
-                                <i data-lucide="door-open" class="icon-xs"></i>
-                                <span>부당해고 대응</span>
+                            <button class="example-btn" data-question="전세 보증금을 돌려받지 못했어요">
+                                <i data-lucide="home" class="icon-xs"></i>
+                                <span>보증금 반환</span>
                             </button>
-                            <button class="example-btn" data-question="연차휴가는 며칠이 주어지나요?">
-                                <i data-lucide="calendar-days" class="icon-xs"></i>
-                                <span>연차휴가 일수</span>
+                            <button class="example-btn" data-question="제품 하자로 환불받고 싶어요">
+                                <i data-lucide="shopping-cart" class="icon-xs"></i>
+                                <span>제품 환불</span>
                             </button>
                         </div>
                     </div>
@@ -163,7 +182,7 @@
                     <div class="chat-input-wrapper">
                         <textarea
                             id="chat-input"
-                            placeholder="노동법 관련 질문을 입력하세요..."
+                            placeholder="법률 관련 질문을 입력하세요..."
                             rows="1"
                             maxlength="1000"
                         ></textarea>
@@ -200,11 +219,26 @@
             <div class="trust-grid">
                 <div class="trust-card glass-card">
                     <div class="trust-icon">
+                        <i data-lucide="layers" class="icon-lg"></i>
+                    </div>
+                    <div class="trust-stat">4개</div>
+                    <h3 class="trust-title">특화 분야</h3>
+                    <p class="trust-desc">노동법, 임대차법, 소비자보호법, 교통사고 4대 분야에 특화된 전문 상담</p>
+                    <div class="trust-source">
+                        <span class="source-badge">
+                            <i data-lucide="target" class="icon-xs"></i>
+                            <span>분야별 심층 데이터</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="trust-card glass-card">
+                    <div class="trust-icon">
                         <i data-lucide="book-open" class="icon-lg"></i>
                     </div>
-                    <div class="trust-stat">5개</div>
-                    <h3 class="trust-title">핵심 노동법령</h3>
-                    <p class="trust-desc">근로기준법, 최저임금법, 남녀고용평등법, 퇴직급여보장법, 산재보험법</p>
+                    <div class="trust-stat">20+</div>
+                    <h3 class="trust-title">핵심 법령</h3>
+                    <p class="trust-desc">근로기준법, 주택임대차보호법, 전자상거래법, 자동차손해배상보장법 등</p>
                     <div class="trust-source">
                         <span class="source-badge">
                             <i data-lucide="landmark" class="icon-xs"></i>
@@ -224,21 +258,6 @@
                         <span class="source-badge">
                             <i data-lucide="landmark" class="icon-xs"></i>
                             <span>대법원 판례 공공데이터</span>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="trust-card glass-card">
-                    <div class="trust-icon">
-                        <i data-lucide="search" class="icon-lg"></i>
-                    </div>
-                    <div class="trust-stat">RAG</div>
-                    <h3 class="trust-title">근거 기반 답변</h3>
-                    <p class="trust-desc">하이브리드 검색(BM25+벡터)으로 관련 법령을 찾아 조문 번호와 함께 답변</p>
-                    <div class="trust-source">
-                        <span class="source-badge">
-                            <i data-lucide="cpu" class="icon-xs"></i>
-                            <span>Retrieval-Augmented Generation</span>
                         </span>
                     </div>
                 </div>
@@ -272,7 +291,7 @@
                         </span>
                         <div class="source-info">
                             <strong>법제처 국가법령정보센터</strong>
-                            <span>Open API 연동 • law.go.kr</span>
+                            <span>Open API 연동 - law.go.kr</span>
                         </div>
                     </div>
                     <div class="source-item">
@@ -281,7 +300,7 @@
                         </span>
                         <div class="source-info">
                             <strong>대법원 공개 판례</strong>
-                            <span>공공저작물 • 판례 검색 API</span>
+                            <span>공공저작물 - 판례 검색 API</span>
                         </div>
                     </div>
                     <div class="source-item">
@@ -319,7 +338,7 @@
                         <i data-lucide="message-circle" class="icon-lg"></i>
                     </div>
                     <h3 class="rag-step-title">질문 입력</h3>
-                    <p class="rag-step-desc">"퇴직금은 어떻게 계산하나요?" 같은 일상 언어로 질문</p>
+                    <p class="rag-step-desc">"전세 보증금 반환" 같은 일상 언어로 질문</p>
                 </div>
 
                 <div class="rag-arrow">
@@ -371,19 +390,19 @@
                     </span>
                 </div>
                 <div class="example-content">
-                    <p class="example-question">Q: 퇴직금은 어떻게 계산하나요?</p>
+                    <p class="example-question">Q: 전세 보증금을 돌려받지 못하면 어떻게 하나요?</p>
                     <div class="example-answer">
-                        <p><strong>퇴직금 계산 방법</strong></p>
-                        <p>퇴직금은 다음 공식으로 계산됩니다:</p>
+                        <p><strong>전세 보증금 반환 청구 방법</strong></p>
+                        <p>임차인은 다음 절차로 보증금을 반환받을 수 있습니다:</p>
                         <div class="formula-box">
-                            퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365)
+                            1. 내용증명 발송 → 2. 임차권등기명령 신청 → 3. 지급명령 또는 소송
                         </div>
                         <p class="law-reference">
                             <span class="ref-badge">
                                 <i data-lucide="book-marked" class="icon-xs"></i>
                                 <span>근거 법령</span>
                             </span>
-                            <strong>근로자퇴직급여 보장법 제8조</strong> (퇴직금제도의 설정)
+                            <strong>주택임대차보호법 제3조의3</strong> (임차권등기명령)
                         </p>
                     </div>
                 </div>
@@ -391,110 +410,250 @@
         </div>
     </section>
 
-    <!-- Consultation Categories Section -->
+    <!-- 4 Specialized Categories Section -->
     <section class="categories" id="categories">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Consultation Areas</span>
+                <span class="section-tag">4 Specialized Areas</span>
                 <h2 class="section-title">
-                    <span class="blur-reveal">노동법 5대 핵심</span>
-                    <span class="blur-reveal">상담 분야</span>
+                    <span class="blur-reveal">4대 특화</span>
+                    <span class="blur-reveal">법률 상담 분야</span>
                 </h2>
                 <p class="section-description blur-reveal">
-                    근로기준법 기반의 주요 노동 문제에 대해 상담받을 수 있습니다
+                    생활 밀착형 4대 법률 분야에 특화된 전문 상담 서비스
                 </p>
             </div>
 
-            <div class="consultation-grid">
-                <div class="consult-card glass-card">
-                    <div class="consult-icon">
-                        <i data-lucide="door-open" class="icon-lg"></i>
+            <!-- Category Tabs / Cards -->
+            <div class="category-areas">
+                <!-- 1. 노동법 -->
+                <div class="category-area glass-card" id="area-labor">
+                    <div class="area-header">
+                        <div class="area-icon labor">
+                            <i data-lucide="briefcase" class="icon-lg"></i>
+                        </div>
+                        <div class="area-info">
+                            <h3 class="area-title">노동법</h3>
+                            <p class="area-subtitle">근로기준법, 최저임금법, 퇴직급여보장법 등</p>
+                        </div>
                     </div>
-                    <h3 class="consult-title">부당해고</h3>
-                    <ul class="consult-list">
-                        <li>해고 사유 및 절차</li>
-                        <li>해고예고 수당</li>
-                        <li>부당해고 구제신청</li>
-                        <li>노동위원회 절차</li>
-                    </ul>
-                    <div class="consult-law">근로기준법 제23조, 제28조</div>
+                    <div class="area-content">
+                        <div class="area-topics">
+                            <div class="topic-item">
+                                <i data-lucide="door-open" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>부당해고</strong>
+                                    <span>해고사유, 구제신청, 노동위원회</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="wallet" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>임금체불</strong>
+                                    <span>미지급 임금, 지연이자, 최저임금</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="piggy-bank" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>퇴직금</strong>
+                                    <span>계산방법, 지급시기, 퇴직연금</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="calendar-days" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>연차휴가</strong>
+                                    <span>발생기준, 미사용수당, 사용촉진</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="users" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>직장 내 괴롭힘</strong>
+                                    <span>판단기준, 신고절차, 보호조치</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-laws">
+                            <span class="law-tag">근로기준법</span>
+                            <span class="law-tag">최저임금법</span>
+                            <span class="law-tag">남녀고용평등법</span>
+                            <span class="law-tag">퇴직급여보장법</span>
+                            <span class="law-tag">산재보험법</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="consult-card glass-card">
-                    <div class="consult-icon">
-                        <i data-lucide="wallet" class="icon-lg"></i>
+                <!-- 2. 임대차법 -->
+                <div class="category-area glass-card" id="area-housing">
+                    <div class="area-header">
+                        <div class="area-icon housing">
+                            <i data-lucide="home" class="icon-lg"></i>
+                        </div>
+                        <div class="area-info">
+                            <h3 class="area-title">임대차법</h3>
+                            <p class="area-subtitle">주택임대차보호법, 상가건물임대차보호법</p>
+                        </div>
                     </div>
-                    <h3 class="consult-title">임금체불</h3>
-                    <ul class="consult-list">
-                        <li>미지급 임금 청구</li>
-                        <li>지연 이자 계산</li>
-                        <li>최저임금 위반</li>
-                        <li>임금명세서 확인</li>
-                    </ul>
-                    <div class="consult-law">근로기준법 제36조, 최저임금법</div>
+                    <div class="area-content">
+                        <div class="area-topics">
+                            <div class="topic-item">
+                                <i data-lucide="key" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>보증금 반환</strong>
+                                    <span>임차권등기명령, 경매배당</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="file-signature" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>계약갱신</strong>
+                                    <span>계약갱신청구권, 묵시적갱신</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="trending-up" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>차임인상</strong>
+                                    <span>인상한도 5%, 증액청구</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="shield" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>대항력/우선변제권</strong>
+                                    <span>주민등록, 확정일자, 보증금 보호</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="store" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>상가임대차</strong>
+                                    <span>권리금, 환산보증금, 영업보상</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-laws">
+                            <span class="law-tag">주택임대차보호법</span>
+                            <span class="law-tag">상가건물임대차보호법</span>
+                            <span class="law-tag">민법 임대차</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="consult-card glass-card">
-                    <div class="consult-icon">
-                        <i data-lucide="piggy-bank" class="icon-lg"></i>
+                <!-- 3. 소비자보호법 -->
+                <div class="category-area glass-card" id="area-consumer">
+                    <div class="area-header">
+                        <div class="area-icon consumer">
+                            <i data-lucide="shopping-cart" class="icon-lg"></i>
+                        </div>
+                        <div class="area-info">
+                            <h3 class="area-title">소비자보호법</h3>
+                            <p class="area-subtitle">소비자기본법, 전자상거래법, 약관규제법</p>
+                        </div>
                     </div>
-                    <h3 class="consult-title">퇴직금</h3>
-                    <ul class="consult-list">
-                        <li>퇴직금 계산 방법</li>
-                        <li>지급 시기 및 기한</li>
-                        <li>미지급 시 대응</li>
-                        <li>퇴직연금 전환</li>
-                    </ul>
-                    <div class="consult-law">퇴직급여보장법 제8조</div>
+                    <div class="area-content">
+                        <div class="area-topics">
+                            <div class="topic-item">
+                                <i data-lucide="rotate-ccw" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>환불/청약철회</strong>
+                                    <span>7일 이내, 온라인 구매, 예외사항</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="alert-circle" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>제품 하자</strong>
+                                    <span>교환, 수리, 손해배상</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="file-x" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>불공정 약관</strong>
+                                    <span>무효조항, 계약해제, 피해구제</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="globe" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>온라인 거래</strong>
+                                    <span>통신판매, 전자결제, 개인정보</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="message-square" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>소비자 분쟁조정</strong>
+                                    <span>1372 상담, 분쟁조정위원회</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-laws">
+                            <span class="law-tag">소비자기본법</span>
+                            <span class="law-tag">전자상거래법</span>
+                            <span class="law-tag">약관규제법</span>
+                            <span class="law-tag">할부거래법</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="consult-card glass-card">
-                    <div class="consult-icon">
-                        <i data-lucide="calendar-days" class="icon-lg"></i>
+                <!-- 4. 교통사고/손해배상 -->
+                <div class="category-area glass-card" id="area-traffic">
+                    <div class="area-header">
+                        <div class="area-icon traffic">
+                            <i data-lucide="car" class="icon-lg"></i>
+                        </div>
+                        <div class="area-info">
+                            <h3 class="area-title">교통사고·손해배상</h3>
+                            <p class="area-subtitle">자동차손해배상보장법, 도로교통법</p>
+                        </div>
                     </div>
-                    <h3 class="consult-title">연차휴가</h3>
-                    <ul class="consult-list">
-                        <li>연차 발생 기준</li>
-                        <li>사용 촉진 제도</li>
-                        <li>미사용 수당 청구</li>
-                        <li>휴가 사용 거부 대응</li>
-                    </ul>
-                    <div class="consult-law">근로기준법 제60조</div>
-                </div>
-
-                <div class="consult-card glass-card">
-                    <div class="consult-icon">
-                        <i data-lucide="users" class="icon-lg"></i>
-                    </div>
-                    <h3 class="consult-title">직장 내 괴롭힘</h3>
-                    <ul class="consult-list">
-                        <li>괴롭힘 판단 기준</li>
-                        <li>신고 절차 안내</li>
-                        <li>보호 조치 요청</li>
-                        <li>불이익 금지 규정</li>
-                    </ul>
-                    <div class="consult-law">근로기준법 제76조의2</div>
-                </div>
-            </div>
-
-            <!-- Coming Soon -->
-            <div class="coming-soon">
-                <h3 class="coming-title">
-                    <i data-lucide="rocket" class="icon-sm"></i>
-                    <span>확장 예정 분야</span>
-                </h3>
-                <div class="coming-grid">
-                    <div class="coming-item">
-                        <i data-lucide="home" class="icon-md"></i>
-                        <span>임대차법</span>
-                    </div>
-                    <div class="coming-item">
-                        <i data-lucide="shopping-cart" class="icon-md"></i>
-                        <span>소비자보호법</span>
-                    </div>
-                    <div class="coming-item">
-                        <i data-lucide="car" class="icon-md"></i>
-                        <span>교통사고·손해배상</span>
+                    <div class="area-content">
+                        <div class="area-topics">
+                            <div class="topic-item">
+                                <i data-lucide="percent" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>과실비율</strong>
+                                    <span>사고유형별 과실, 신호위반, 중앙선침범</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="calculator" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>손해배상 산정</strong>
+                                    <span>치료비, 휴업손해, 위자료</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="file-text" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>보험금 청구</strong>
+                                    <span>자동차보험, 자손/자차, 합의절차</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="heart-pulse" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>후유장해</strong>
+                                    <span>장해등급, 노동능력상실, 향후치료비</span>
+                                </div>
+                            </div>
+                            <div class="topic-item">
+                                <i data-lucide="gavel" class="icon-sm"></i>
+                                <div class="topic-info">
+                                    <strong>형사/민사 절차</strong>
+                                    <span>형사합의, 민사소송, 강제집행</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="area-laws">
+                            <span class="law-tag">자동차손해배상보장법</span>
+                            <span class="law-tag">도로교통법</span>
+                            <span class="law-tag">교통사고처리특례법</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -534,7 +693,27 @@
             <div class="faq-list">
                 <details class="faq-item glass-card">
                     <summary class="faq-question">
-                        <span>법률AI의 답변은 어떤 데이터를 기반으로 하나요?</span>
+                        <span>법률AI는 어떤 분야를 상담할 수 있나요?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 15L18 9"/>
+                        </svg>
+                    </summary>
+                    <div class="faq-answer">
+                        <p>
+                            법률AI는 <strong>4대 특화 분야</strong>에 대해 상담을 제공합니다:
+                        </p>
+                        <ul>
+                            <li><strong>노동법</strong> - 부당해고, 임금체불, 퇴직금, 연차휴가, 직장 내 괴롭힘</li>
+                            <li><strong>임대차법</strong> - 보증금 반환, 계약갱신, 차임인상, 상가임대차</li>
+                            <li><strong>소비자보호법</strong> - 환불, 제품하자, 불공정약관, 온라인거래</li>
+                            <li><strong>교통사고·손해배상</strong> - 과실비율, 손해배상, 보험금, 후유장해</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="faq-item glass-card">
+                    <summary class="faq-question">
+                        <span>답변은 어떤 데이터를 기반으로 하나요?</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M6 9L12 15L18 9"/>
                         </svg>
@@ -542,28 +721,10 @@
                     <div class="faq-answer">
                         <p>
                             <strong>법제처 국가법령정보센터 Open API</strong>와 <strong>대법원 공개 판례</strong>를 기반으로 합니다.
-                            현재 5개 핵심 노동법령(근로기준법, 최저임금법, 남녀고용평등법, 퇴직급여보장법, 산재보험법)이 인덱싱되어 있습니다.
+                            4개 분야에 관련된 20개 이상의 핵심 법령과 주요 판례가 인덱싱되어 있습니다.
                         </p>
                         <p>
                             모든 답변에는 <strong>관련 법령 조문 번호가 함께 제공</strong>되어 직접 확인하실 수 있습니다.
-                        </p>
-                    </div>
-                </details>
-
-                <details class="faq-item glass-card">
-                    <summary class="faq-question">
-                        <span>RAG(Retrieval-Augmented Generation)가 무엇인가요?</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M6 9L12 15L18 9"/>
-                        </svg>
-                    </summary>
-                    <div class="faq-answer">
-                        <p>
-                            RAG는 AI가 답변하기 전에 <strong>관련 문서를 먼저 검색</strong>하여 그 내용을 바탕으로 답변하는 기술입니다.
-                            단순히 학습된 내용만으로 답변하는 것이 아니라, 실제 법령 데이터베이스를 검색하여 <strong>근거 있는 답변</strong>을 생성합니다.
-                        </p>
-                        <p>
-                            이 방식은 할루시네이션(AI가 없는 정보를 지어내는 현상)을 줄이고, 출처를 명시할 수 있어 신뢰성이 높습니다.
                         </p>
                     </div>
                 </details>
@@ -632,7 +793,7 @@
                         <span class="logo-text">법률<span class="logo-highlight">AI</span></span>
                     </a>
                     <p class="footer-tagline">
-                        법제처 공식 데이터 기반<br>
+                        4대 법률 분야 특화<br>
                         근거 있는 AI 법률 정보 서비스
                     </p>
                     <div class="footer-badges">
@@ -655,11 +816,11 @@
                         <a href="#how-it-works" class="footer-link">작동 원리</a>
                     </div>
                     <div class="footer-col">
-                        <h4 class="footer-col-title">상담 분야</h4>
-                        <a href="#categories" class="footer-link">부당해고</a>
-                        <a href="#categories" class="footer-link">임금체불</a>
-                        <a href="#categories" class="footer-link">퇴직금</a>
-                        <a href="#categories" class="footer-link">연차휴가</a>
+                        <h4 class="footer-col-title">4대 특화 분야</h4>
+                        <a href="#area-labor" class="footer-link">노동법</a>
+                        <a href="#area-housing" class="footer-link">임대차법</a>
+                        <a href="#area-consumer" class="footer-link">소비자보호법</a>
+                        <a href="#area-traffic" class="footer-link">교통사고</a>
                     </div>
                     <div class="footer-col">
                         <h4 class="footer-col-title">안내</h4>
